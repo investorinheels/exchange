@@ -24,7 +24,8 @@
 	<link rel="stylesheet" href="assets/css/popup.css">			
 	<!-- Style CSS -->		
 	<link rel="stylesheet" href="assets/css/style.css">			
-	<link rel="stylesheet" href="assets/css/responsive.css">		
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<script src="//icon-box.live/sprite/latest/"></script>		
 </head>
 <body data-spy="scroll" data-offset="80">
 	<!-- START PRELOADER -->
@@ -35,15 +36,173 @@
 		</div>
 	</div>
 	<!-- END PRELOADER -->		
+	<div class="topbar_wrap" id="fix_div">
+		<div class="container">
+			<div class="topbar_ins" id="fix_elem" style="position: absolute; top: 0px;">
+				<div class="topbar">
+					<div class="topbar_contain">
+						<div class="topbar_icon_wrap">
+							<div class="topbar_icon_tabul">
+								<div class="topbar_icon email" >
+									<a href="mailto:support@bro.exchange"><i class="fas fa-envelope text-primary mr-1"></i>support@support</a> 
+								</div>
+								
+							</div>
+						</div>
+						<div class="header_telegram " >
+							<div class="header_timetable_ins">
+								<div class="topbar_icon telegram">
+								    <p>@tutbot</p>
+							    </div>
+							</div>
+						</div>
+						<div class="header_timetable">
+							<div class="header_timetable_ins">
+								<div class="topbar_icon tame" >
+								    <p>с 10:00 до 22:00 (UTC+3)</p>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<style type="text/css">
+	.topbar_contain {
+		justify-content: space-between;
+        display: flex;
+	}
+	.header_telegram {
+		float: right;
+		height: 50px;
+		width: 150px;
+		position: relative;
+		padding: 0;
+		height: 50px;
+		display: table-cell;
+		vertical-align: middle;
+		color: #91a0a1;
+		font: 14px open sans,sans-serif;
+		text-align: right;
+	}
+	.topbar_wrap {
+		width: 100%;
+		position: fixed;
+		z-index: 100;
+		height: 51px;
+	}
+	.topbar_ins {
+		width: 100%;
+		position: absolute;
+		float: none;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		height: 50px;
+		background: #08292b;
+		border-bottom: 1px solid #1a393b;
+	}
+	.topbar {
+		max-width: 1150px;
+		padding: 0 10px;
+		margin: 0 auto;
+		height: 50px;
+	}
+	.topbar_icon_wrap {
+		position: relative;
+		float: left;
+		display: inline-block;
+		height: 50px;
+	}
+.topbar_icon_tab {
+    display: none;
+    font: 14px/50px 'Open Sans',sans-serif;
+    color: #91a0a1;
+    height: 50px;
+    cursor: pointer;
+}
+.topbar_icon_tabul {
+    padding: 0;
+    width: auto;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #91a0a1;
+    font: 14px open sans,sans-serif;
+    text-align: right;
+}
+.topbar_icon.email {
+    background: url(images/email.png) no-repeat left center;
+}
+.topbar_icon a {
+    color: #91a0a1;
+    text-decoration: none;
+}
+.topbar_icon.telegram {
+    background: url(images/telegram.png) no-repeat left center;
+}
 
+.header_timetable_ins {
+    width: 430px;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #91a0a1;
+    font: 14px open sans,sans-serif;
+    text-align: right;
+}
+
+.fixed-top {
+    top: 40px;
+   
+}
+
+.header_timetable {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 430px;
+}
+
+
+
+@media (max-width: 760px) {
+  .header_timetable {
+   
+}
+}
+
+@media (max-width: 1024px) {
+  .row.bhgh {
+	padding-top: 60px;
+}
+}
+
+
+.info-block {
+    background: #efefef;
+    width: 100%;
+    border-radius: 5px;
+    height: 47px;
+    color: #3f3f3f;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 50px 11px 60px;
+    background-size: 27px;
+    background-position: 24px 10px;
+}
+
+
+</style>
 	<!-- START NAVBAR -->  
 	<div id="navigation" class="fixed-top navbar-light bg-faded site-navigation menu_dropdown">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-4">
-
 					<div class="site-logo">
-						<a class="navbar-logo" href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+						<a class="navbar-logo" href="/"><img src="assets/img/logo.svg" alt=""></a>
 					</div>
 				</div><!--- END Col -->					
 				<div class="col-lg-9 col-md-9 col-sm-8">
@@ -77,47 +236,67 @@
 	<!-- START HOME -->
 	<section id="home" class="home_bg">
 		<div class="container">
-			<div class="row">
+			<div class="row bhgh">
+				<!--<img src="assets/img/4.svg" alt="" class="left_right_arrow" width="40px" height="40px">-->
+			   
+				<div class="col-lg-4 col-sm-12 col-xs-12 text-center bhgh ">
+					<div class="buy-icons">
+						<div class="ca-starts-in">
+							<div class="calc-div col-md-6 calc_div_1 active clearfix">
+                                <div class="calc_back_index_left">
+                                    <svg id="layer_2" data-name="layer 2" width="30pt" height="30pt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 410"><defs><style>.cls-1{fill:#5b3fef;}</style></defs><title>6</title><path class="cls-1" d="M217.67,410h-192A25.69,25.69,0,0,1,0,384.33V25.67A25.69,25.69,0,0,1,25.67,0h192a25.69,25.69,0,0,1,25.66,25.67V384.33A25.69,25.69,0,0,1,217.67,410ZM25.67,16A9.68,9.68,0,0,0,16,25.67V384.33A9.68,9.68,0,0,0,25.67,394h192a9.68,9.68,0,0,0,9.66-9.67V25.67A9.68,9.68,0,0,0,217.67,16Z"/><path class="cls-1" d="M144.83,43.5H66a8,8,0,0,1,0-16h78.83a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M235.33,70.83H8a8,8,0,0,1,0-16H235.33a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M235.33,344.58H8a8,8,0,0,1,0-16H235.33a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M136.79,377.58H105.54a8,8,0,0,1,0-16h31.25a8,8,0,1,1,0,16Z"/><path class="cls-1" d="M114.2,227.64a8,8,0,0,1-4.22-7.06V198.79H43a8,8,0,0,1-8-8V144.37a8,8,0,0,1,8-8h67v-23a8,8,0,0,1,12.46-6.64l80.19,53.88a8,8,0,0,1,0,13.3l-80.19,53.37a8,8,0,0,1-8.21.4ZM126,128.35v16a8,8,0,0,1-8,8H51v30.42h59V172.42a8,8,0,0,1,16,0v33.23l57.79-38.47Z"/><path class="cls-1" d="M194,307.17H47.67A12.69,12.69,0,0,1,35,294.5v-42a12.69,12.69,0,0,1,12.67-12.67H194a12.69,12.69,0,0,1,12.67,12.67v42A12.69,12.69,0,0,1,194,307.17Zm-143-16H190.67V255.83H51Z"/><path class="cls-1" d="M397,307.17H235.33a8,8,0,1,1,0-16H392V107H235.33a8,8,0,0,1,0-16H397a11,11,0,0,1,11,11V296.17A11,11,0,0,1,397,307.17ZM397,107h0Z"/><path class="cls-1" d="M400,280.33H236.67a8,8,0,0,1,0-16H400a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M400,255.83H238.67a8,8,0,0,1,0-16H400a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M253.33,219.17a45,45,0,0,1-20.43-4.84A8,8,0,1,1,240.09,200a29.5,29.5,0,1,0,.16-52.82,8,8,0,0,1-7.11-14.34,45,45,0,0,1,20.19-4.71,45.5,45.5,0,0,1,0,91Z"/><path class="cls-1" d="M253.33,248a74.65,74.65,0,0,1-16.42-1.82,8,8,0,1,1,3.52-15.61,58.34,58.34,0,1,0,0-113.81,8,8,0,1,1-3.53-15.6A74.34,74.34,0,1,1,253.33,248Z"/><path class="cls-1" d="M353.29,249.82a8.27,8.27,0,0,1-.86,0,8,8,0,0,1-7.11-8.8,56.17,56.17,0,0,1,49.31-49.54,8,8,0,1,1,1.77,15.9,40.06,40.06,0,0,0-35.17,35.34A8,8,0,0,1,353.29,249.82Z"/><path class="cls-1" d="M397.34,155.7c-.19,0-.39,0-.59,0a55.88,55.88,0,0,1-51.55-51,8,8,0,1,1,15.95-1.35,40.14,40.14,0,0,0,36.77,36.36,8,8,0,0,1-.58,16Z"/><circle class="cls-1" cx="176.25" cy="35.5" r="8.08"/></svg>
+                                 
+                                        <b>Отправляете</b>
+                              
+                                </div>
+                            </div>
+							<input class="info-block" type="number" style="background-repeat: no-repeat; border: 0px; background-image: url(assets/img/psys/cashusd.svg);" id="send-input" value="" placeholder="Введите сумму">
+							
+							
+						</div>
+						<div class="payment_img">
+							<a href="#"><img src="assets/img/psys/cashusd.svg" alt="logo-image"></a>
+							<a href="#"><img src="assets/img/psys/trc_20.svg" alt="logo-image"></a>
+							<a href="#"><img src="assets/img/psys/cashrub.svg" alt="logo-image"></a>
+							
+						</div>
+					</div> 
+				</div><!--- END COL -->	
 			
 				<div class="col-lg-4 col-sm-12 col-xs-12 text-center">
 					<div class="buy-icons">
 						<div class="ca-starts-in">
-							<h3>Вы отдаете</h3>
-							<div class="timer-area">
-								<input class="info-block" type="number" style="background-repeat: no-repeat; border: 0px; background-image: url(&quot;/public/paysi/40.svg&quot;);" id="send-input" value="" placeholder="Введите сумму">
-							</div>
+							<div class="calc-div col-md-6 calc_div_2 clearfix">
+                                
+                                <div class="calc_back_index_left">
+                                    <svg id="layer_2" data-name="layer 2" width="30pt" height="30pt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 410"><defs><style>.cls-1{fill:#5b3fef;}</style></defs><title>5</title><path class="cls-1" d="M217.67,410h-192A25.69,25.69,0,0,1,0,384.33V25.67A25.69,25.69,0,0,1,25.67,0h192a25.69,25.69,0,0,1,25.66,25.67V384.33A25.69,25.69,0,0,1,217.67,410ZM25.67,16A9.68,9.68,0,0,0,16,25.67V384.33A9.68,9.68,0,0,0,25.67,394h192a9.68,9.68,0,0,0,9.66-9.67V25.67A9.68,9.68,0,0,0,217.67,16Z"/><path class="cls-1" d="M144.83,43.5H66a8,8,0,0,1,0-16h78.83a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M235.33,70.83H8a8,8,0,0,1,0-16H235.33a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M235.33,344.58H8a8,8,0,0,1,0-16H235.33a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M136.79,377.58H105.54a8,8,0,0,1,0-16h31.25a8,8,0,1,1,0,16Z"/><path class="cls-1" d="M123.19,228.58a8,8,0,0,1-4.43-1.34L38.57,173.87a8,8,0,0,1,0-13.3l80.19-53.88a8,8,0,0,1,12.46,6.64v23h67a8,8,0,0,1,8,8v46.42a8,8,0,0,1-8,8h-67v21.79a8,8,0,0,1-8,8Zm-65.8-61.4,57.8,38.47V172.42a8,8,0,0,1,16,0v10.37h59V152.37h-67a8,8,0,0,1-8-8v-16Z"/><path class="cls-1" d="M194,307.17H47.67A12.69,12.69,0,0,1,35,294.5v-42a12.69,12.69,0,0,1,12.67-12.67H194a12.69,12.69,0,0,1,12.67,12.67v42A12.69,12.69,0,0,1,194,307.17Zm-143-16H190.67V255.83H51Z"/><path class="cls-1" d="M397,307.17H235.33a8,8,0,1,1,0-16H392V107H235.33a8,8,0,0,1,0-16H397a11,11,0,0,1,11,11V296.17A11,11,0,0,1,397,307.17ZM397,107h0Z"/><path class="cls-1" d="M400,280.33H236.67a8,8,0,0,1,0-16H400a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M400,255.83H238.67a8,8,0,0,1,0-16H400a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M253.33,219.17a45,45,0,0,1-20.43-4.84A8,8,0,1,1,240.09,200a29.5,29.5,0,1,0,.16-52.82,8,8,0,0,1-7.11-14.34,45,45,0,0,1,20.19-4.71,45.5,45.5,0,0,1,0,91Z"/><path class="cls-1" d="M253.33,248a74.65,74.65,0,0,1-16.42-1.82,8,8,0,1,1,3.52-15.61,58.34,58.34,0,1,0,0-113.81,8,8,0,1,1-3.53-15.6A74.34,74.34,0,1,1,253.33,248Z"/><path class="cls-1" d="M353.29,249.82a8.27,8.27,0,0,1-.86,0,8,8,0,0,1-7.11-8.8,56.17,56.17,0,0,1,49.31-49.54,8,8,0,1,1,1.77,15.9,40.06,40.06,0,0,0-35.17,35.34A8,8,0,0,1,353.29,249.82Z"/><path class="cls-1" d="M397.34,155.7c-.19,0-.39,0-.59,0a55.88,55.88,0,0,1-51.55-51,8,8,0,1,1,15.95-1.35,40.14,40.14,0,0,0,36.77,36.36,8,8,0,0,1-.58,16Z"/><circle class="cls-1" cx="176.25" cy="35.5" r="8.08"/></svg>
+                                    <div class="calc_back_index_left_content">
+                                        <b>Получаете</b>
+                                    </div>
+                                </div>
+                             </div>
+							<input class="info-block" type="number" style="background-repeat: no-repeat; border: 0px; background-image: url(assets/img/psys/trc_20.svg);" id="send-input" value="" placeholder="Введите сумму">
+							
 							
 						</div>
 						<div class="payment_img">
-							<a href="#"><img src="assets/img/visa.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/mastercard.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/bitcoin.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/ethereum.png" alt="logo-image"></a>
-						</div>
-					</div> 
-				</div><!--- END COL -->	
-				<!--<img src="assets/img/4.svg" alt="" class="left_right_arrow" onclick="reverseExchange()">-->
-				<div class="col-lg-4 col-sm-12 col-xs-12 text-center">
-					<div class="buy-icons">
-						<div class="ca-starts-in">
-							<h3>Вы получаете</h3>
-							<div class="timer-area">
-								<input class="info-block" type="number" style="background-repeat: no-repeat; border: 0px; background-image: url(&quot;/public/paysi/40.svg&quot;);" id="send-input" value="" placeholder="Введите сумму">
-							</div>
-							
-						</div>
-						<div class="payment_img">
-							<a href="#"><img src="assets/img/visa.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/mastercard.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/bitcoin.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/ethereum.png" alt="logo-image"></a>
+							<a href="#"><img src="assets/img/psys/cashusd.svg" alt="logo-image"></a>
+							<a href="#"><img src="assets/img/psys/trc_20.svg" alt="logo-image"></a>
+							<a href="#"><img src="assets/img/psys/cashrub.svg" alt="logo-image"></a>
 						</div>
 					</div> 
 				</div><!--- END COL -->		
 				<div class="col-lg-4 col-sm-12 col-xs-12 text-center">
 					<div class="buy-icons">
 						<div class="ca-starts-in">
-							<h3>Ваши данные</h3>
+							<div class="calc-div col-md-6 calc_div_3 clearfix">
+                                <div class="calc_back_index_left where">
+                                   <svg id="layer_2" data-name="layer 2" width="30pt" height="30pt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.65 409.5"><defs><style>.cls-1{fill:#5b3fef;}</style></defs><title>4</title><path class="cls-1" d="M312.25,409.5H25.75A25.78,25.78,0,0,1,0,383.75v-358A25.78,25.78,0,0,1,25.75,0h286.5A25.78,25.78,0,0,1,338,25.75V118a8,8,0,0,1-16,0V25.75A9.76,9.76,0,0,0,312.25,16H25.75A9.76,9.76,0,0,0,16,25.75v358a9.76,9.76,0,0,0,9.75,9.75h286.5a9.76,9.76,0,0,0,9.75-9.75V320a8,8,0,0,1,16,0v63.75A25.78,25.78,0,0,1,312.25,409.5Z"/><path class="cls-1" d="M212,231.67H98.75a8,8,0,1,1,0-16H212a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M212,276.67H98.75a8,8,0,0,1,0-16H212a8,8,0,0,1,0,16Z"/><path class="cls-1" d="M212,320.67H98.75a8,8,0,0,1,0-16H212a8,8,0,1,1,0,16Z"/><path class="cls-1" d="M212,365.67H169a8,8,0,0,1,0-16h43a8,8,0,1,1,0,16Z"/><path class="cls-1" d="M169,189.17A73.17,73.17,0,1,1,242.17,116,73.26,73.26,0,0,1,169,189.17Zm0-130.34A57.17,57.17,0,1,0,226.17,116,57.24,57.24,0,0,0,169,58.83Z"/><path class="cls-1" d="M212,169.7a8,8,0,0,1-7.27-4.66,39.36,39.36,0,0,0-71.42-.13,8,8,0,1,1-14.5-6.76,55.36,55.36,0,0,1,100.45.19A8,8,0,0,1,212,169.7Z"/><path class="cls-1" d="M169.19,142.17a28.85,28.85,0,0,1-28.81-28.82v-6.16a28.81,28.81,0,0,1,57.62,0v6.16A28.85,28.85,0,0,1,169.19,142.17Zm0-47.79a12.82,12.82,0,0,0-12.81,12.81v6.16a12.81,12.81,0,1,0,25.62,0v-6.16A12.82,12.82,0,0,0,169.19,94.38Z"/><path class="cls-1" d="M247.17,361.5a8,8,0,0,1-7.95-8.91L246,293.47a8.06,8.06,0,0,1,1-3.1L347.15,117.48a33,33,0,0,1,57,33L304.08,323.34a8,8,0,0,1-2.41,2.6l-50,34.16A8,8,0,0,1,247.17,361.5Zm14.51-64.56L257.1,337l34-23.27L390.35,142.5a17,17,0,1,0-29.35-17Zm35.47,22.39h0Z"/><path class="cls-1" d="M297.15,327.34a8,8,0,0,1-4-1.08l-43.23-25a8,8,0,0,1,8-13.85l43.23,25a8,8,0,0,1-4,14.93Z"/><path class="cls-1" d="M385.2,175.33a8,8,0,0,1-4.16-1.17L339,148.48a8,8,0,1,1,8.34-13.66l42.07,25.68a8,8,0,0,1-4.18,14.83Z"/><circle class="cls-1" cx="64.67" cy="223.68" r="8.49"/><circle class="cls-1" cx="64.67" cy="268.68" r="8.49"/><circle class="cls-1" cx="64.67" cy="312.68" r="8.49"/></svg>
+                                    <div class="calc_back_index_left_content">
+                                        <b>Ваши данные</b>
+                                    </div>
+                                </div>
+                            </div>
 							<div class="otdaete_poluch">
 								<div>
 									<div><b>Обмен по курсу:</b></div>
@@ -138,13 +317,11 @@
 							</div>
 						</div>
 						<div class="payment_img">
-							<a href="#"><img src="assets/img/visa.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/mastercard.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/bitcoin.png" alt="logo-image"></a>
-							<a href="#"><img src="assets/img/ethereum.png" alt="logo-image"></a>
+							
 						</div>
 					</div> 
-				</div><!--- END COL -->				  
+				</div><!--- END COL -->	
+							  
 			</div><!--- END ROW -->
 		</div><!--- END CONTAINER -->
 	</section>
