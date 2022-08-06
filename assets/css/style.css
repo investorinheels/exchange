@@ -102,6 +102,129 @@ fieldset {
 	text-indent: -12345px;
 	z-index: 10000;
 }
+	.topbar_contain {
+		justify-content: space-between;
+        display: flex;
+	}
+	.header_telegram {
+		float: right;
+		height: 50px;
+		width: 150px;
+		position: relative;
+		padding: 0;
+		height: 50px;
+		display: table-cell;
+		vertical-align: middle;
+		color: #91a0a1;
+		font: 14px open sans,sans-serif;
+		text-align: right;
+	}
+	.topbar_wrap {
+		width: 100%;
+		position: fixed;
+		z-index: 100;
+		height: 51px;
+	}
+	.topbar_ins {
+		width: 100%;
+		position: absolute;
+		float: none;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		height: 50px;
+		background: #08292b;
+		border-bottom: 1px solid #1a393b;
+	}
+	.topbar {
+		max-width: 1150px;
+		padding: 0 10px;
+		margin: 0 auto;
+		height: 50px;
+	}
+	.topbar_icon_wrap {
+		position: relative;
+		float: left;
+		display: inline-block;
+		height: 50px;
+	}
+.topbar_icon_tab {
+    display: none;
+    font: 14px/50px 'Open Sans',sans-serif;
+    color: #91a0a1;
+    height: 50px;
+    cursor: pointer;
+}
+.topbar_icon_tabul {
+    padding: 0;
+    width: auto;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #91a0a1;
+    font: 14px open sans,sans-serif;
+    text-align: right;
+}
+.topbar_icon.email {
+    background: url(images/email.png) no-repeat left center;
+}
+.topbar_icon a {
+    color: #91a0a1;
+    text-decoration: none;
+}
+.topbar_icon.telegram {
+    background: url(images/telegram.png) no-repeat left center;
+}
+
+.header_timetable_ins {
+    width: 430px;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #91a0a1;
+    font: 14px open sans,sans-serif;
+    text-align: right;
+}
+
+.fixed-top {
+    top: 40px;
+   
+}
+
+.header_timetable {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 430px;
+}
+
+
+
+@media (max-width: 760px) {
+  .header_timetable {
+   
+}
+}
+
+@media (max-width: 1024px) {
+  .row.bhgh {
+	padding-top: 60px;
+}
+}
+
+
+.info-block {
+    background: #efefef;
+    width: 100%;
+    border-radius: 5px;
+    height: 47px;
+    color: #3f3f3f;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 50px 11px 60px;
+    background-size: 27px;
+    background-position: 24px 10px;
+}
 
 .double-bounce1, .double-bounce2 {
   width: 100%;
